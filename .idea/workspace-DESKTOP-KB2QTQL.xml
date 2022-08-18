@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5803d8ee-2bdf-43bd-afaa-efd7df55efc0" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints>
+      <file url="file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m491递增子序列.java" />
+    </disable_hints>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m491递增子序列.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="G:\Maven-3.8.4\.m2\repository" />
+        <option name="mavenHome" value="G:/Maven-3.8.4" />
+        <option name="userSettingsFile" value="G:\Maven-3.8.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="28loi8YyidjgtS4FV0y0v3nUXuu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "SDK",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\HDU\Java\Learn\Leetcode\leetcode-master\src\E_Queue" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\HDU\Java\Learn\Leetcode\leetcode-master\src" />
+      <recent name="E:\HDU\Java\Learn\Leetcode\leetcode-master" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="G_Backtracking" />
+      <recent name="F_BinaryTree" />
+      <recent name="E_Queue" />
+      <recent name="D_字符串" />
+      <recent name="C_HashSet" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.m78组合3">
+    <configuration name="e27_移除元素" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="A_Array.e27_移除元素" />
+      <module name="leetcode-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="A_Array.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m17电话号码的字母组合" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="G_Backtracking.m17电话号码的字母组合" />
+      <module name="leetcode-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="G_Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m46全排列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="G_Backtracking.m46全排列" />
+      <module name="leetcode-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="G_Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m491递增子序列" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="G_Backtracking.m491递增子序列" />
+      <module name="leetcode-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="G_Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="m78组合3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="G_Backtracking.m78组合3" />
+      <module name="leetcode-master" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="G_Backtracking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.m78组合3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5803d8ee-2bdf-43bd-afaa-efd7df55efc0" name="变更" comment="" />
+      <created>1651800659930</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651800659930</updated>
+      <workItem from="1651800661084" duration="5408000" />
+      <workItem from="1651840379230" duration="5874000" />
+      <workItem from="1651887263513" duration="5517000" />
+      <workItem from="1651922455073" duration="5429000" />
+      <workItem from="1651990788340" duration="8220000" />
+      <workItem from="1652059249297" duration="5743000" />
+      <workItem from="1652145234705" duration="1154000" />
+      <workItem from="1652231999811" duration="3405000" />
+      <workItem from="1652319102349" duration="4082000" />
+      <workItem from="1652404730627" duration="11358000" />
+      <workItem from="1652447305490" duration="2697000" />
+      <workItem from="1652508829070" duration="4557000" />
+      <workItem from="1652588044131" duration="5025000" />
+      <workItem from="1652620614698" duration="72000" />
+      <workItem from="1652620704867" duration="131000" />
+      <workItem from="1652662918914" duration="4952000" />
+      <workItem from="1652837125327" duration="3338000" />
+      <workItem from="1652923321313" duration="1974000" />
+      <workItem from="1652943462604" duration="2149000" />
+      <workItem from="1652967859550" duration="2379000" />
+      <workItem from="1653009717538" duration="1997000" />
+      <workItem from="1653108910325" duration="3740000" />
+      <workItem from="1653136098581" duration="3307000" />
+      <workItem from="1653197424951" duration="2649000" />
+      <workItem from="1653200236394" duration="11000" />
+      <workItem from="1653269329601" duration="4386000" />
+      <workItem from="1653441933247" duration="3808000" />
+      <workItem from="1653570347335" duration="1824000" />
+      <workItem from="1653572775206" duration="441000" />
+      <workItem from="1653614455827" duration="6505000" />
+      <workItem from="1653659290762" duration="2255000" />
+      <workItem from="1653713008481" duration="4069000" />
+      <workItem from="1653745615818" duration="2305000" />
+      <workItem from="1653790739367" duration="5491000" />
+      <workItem from="1653802992456" duration="5384000" />
+      <workItem from="1653830678304" duration="1572000" />
+      <workItem from="1653873234950" duration="7207000" />
+      <workItem from="1653959734529" duration="594000" />
+      <workItem from="1654045916496" duration="6711000" />
+      <workItem from="1654323454213" duration="2081000" />
+      <workItem from="1654927395944" duration="3014000" />
+      <workItem from="1654931867480" duration="4458000" />
+      <workItem from="1655006572659" duration="2554000" />
+      <workItem from="1655036901514" duration="3915000" />
+      <workItem from="1655083709336" duration="11405000" />
+      <workItem from="1655175181500" duration="3354000" />
+      <workItem from="1655255861530" duration="11931000" />
+      <workItem from="1655295356564" duration="5109000" />
+      <workItem from="1655342947919" duration="5052000" />
+      <workItem from="1655441723502" duration="1962000" />
+      <workItem from="1655470444248" duration="1229000" />
+      <workItem from="1655534160092" duration="594000" />
+      <workItem from="1655558155084" duration="2565000" />
+      <workItem from="1655629474876" duration="4772000" />
+      <workItem from="1655646059099" duration="1379000" />
+      <workItem from="1655688348091" duration="3685000" />
+      <workItem from="1655731755721" duration="35000" />
+      <workItem from="1655733069235" duration="11000" />
+      <workItem from="1655774384294" duration="3556000" />
+      <workItem from="1655818356988" duration="168000" />
+      <workItem from="1655818558316" duration="12000" />
+      <workItem from="1655820815743" duration="721000" />
+      <workItem from="1655862670743" duration="2492000" />
+      <workItem from="1656134370814" duration="1413000" />
+      <workItem from="1656221124874" duration="981000" />
+      <workItem from="1656298749910" duration="5393000" />
+      <workItem from="1656381435767" duration="4607000" />
+      <workItem from="1656557596978" duration="833000" />
+      <workItem from="1656640337566" duration="2490000" />
+      <workItem from="1656739946894" duration="3467000" />
+      <workItem from="1656854453056" duration="1426000" />
+      <workItem from="1656900090732" duration="1375000" />
+      <workItem from="1657023472931" duration="633000" />
+      <workItem from="1657095578950" duration="4099000" />
+      <workItem from="1657159937318" duration="5931000" />
+      <workItem from="1657245325244" duration="1196000" />
+      <workItem from="1657352812538" duration="2374000" />
+      <workItem from="1657504569775" duration="1883000" />
+      <workItem from="1657590230756" duration="2853000" />
+      <workItem from="1657627896903" duration="598000" />
+      <workItem from="1657800321924" duration="2682000" />
+      <workItem from="1657879986812" duration="1415000" />
+      <workItem from="1658558341633" duration="1867000" />
+      <workItem from="1658581628293" duration="1355000" />
+      <workItem from="1658584471235" duration="113000" />
+      <workItem from="1658646335957" duration="57000" />
+      <workItem from="1658712375931" duration="322000" />
+      <workItem from="1658712747351" duration="2084000" />
+      <workItem from="1658799983285" duration="3473000" />
+      <workItem from="1658906495713" duration="3318000" />
+      <workItem from="1659086752986" duration="3360000" />
+      <workItem from="1659166243882" duration="716000" />
+      <workItem from="1659168394273" duration="6055000" />
+      <workItem from="1659256352093" duration="1958000" />
+      <workItem from="1659268379047" duration="3415000" />
+      <workItem from="1659316944868" duration="3306000" />
+      <workItem from="1659338885441" duration="160000" />
+      <workItem from="1659406786075" duration="2907000" />
+      <workItem from="1659424552927" duration="2496000" />
+      <workItem from="1659490445693" duration="5354000" />
+      <workItem from="1659576287383" duration="6267000" />
+      <workItem from="1659662655743" duration="5437000" />
+      <workItem from="1659676559457" duration="1285000" />
+      <workItem from="1659683274985" duration="2080000" />
+      <workItem from="1659775414863" duration="1420000" />
+      <workItem from="1659790889634" duration="604000" />
+      <workItem from="1659854094151" duration="1765000" />
+      <workItem from="1659876286911" duration="45000" />
+      <workItem from="1659923898412" duration="1928000" />
+      <workItem from="1660094991716" duration="2707000" />
+      <workItem from="1660181982880" duration="2618000" />
+      <workItem from="1660292280956" duration="1688000" />
+      <workItem from="1660300949363" duration="26000" />
+      <workItem from="1660307545230" duration="689000" />
+      <workItem from="1660375705757" duration="223000" />
+      <workItem from="1660376191607" duration="892000" />
+      <workItem from="1660377109509" duration="4604000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/B_LinkedList/e206_反转链表.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/B_LinkedList/e206_反转链表.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/B_LinkedList/e19_删除链表的倒数第N个结点.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/B_LinkedList/e07_链表相交.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/B_LinkedList/e142_环形链表2.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/A_Array/e704_二分查找.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/A_Array/e27_移除元素.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/A_Array/e209_长度最小的子数组.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/A_Array/e209_长度最小的子数组.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/A_Array/e59_螺旋矩阵2.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e242_有效的字母异位词.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e242_有效的字母异位词.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e349_两个数组的交集.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e202_快乐数.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e1_两数之和.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e454_四数相加2.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e383_赎金信.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e15_三数之和.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/C_HashSet/e18_四数之和.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e344_反转字符串.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e541_反转字符串2.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/jz05_替换空格.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e151_颠倒字符串中的单词.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/jz05_替换空格.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/jz58_左旋转字符串II.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/jz58_左旋转字符串II.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e28_实现strStr.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e28_实现strStr.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e459_重复的子字符串.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/D_字符串/e459_重复的子字符串.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/E_Queue/e1047删除字符串中的所有相邻重复项.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/E_Queue/e150逆波兰表达式求值.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/E_Queue/h239滑动窗口最大值.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/E_Queue/h239滑动窗口最大值.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/E_Queue/h239滑动窗口最大值.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/E_Queue/m347前K个高频元素.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e94二叉树的中序遍历.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e144二叉树的前序遍历.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e102二叉树的层序遍历.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e226翻转二叉树.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e104二叉树的最大深度.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e111二叉树的最小深度.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e110平衡二叉树.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e257二叉树的所有路径.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e257二叉树的所有路径.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e513找树左下角的值.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e112路径总和.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e110平衡二叉树.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e110平衡二叉树.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e257二叉树的所有路径.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/m106从中序与后序遍历序列构造二叉树.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/m105从前序与中序遍历序列构造二叉树.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="113" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/m654最大二叉树.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/m98验证二叉搜索树.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e530二叉搜索树的最小绝对差.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e501二叉搜索树中的众数.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e235二叉搜索树的最近公共祖先.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/m450删除二叉搜索树中的节点.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/F_BinaryTree/e108将有序数组转换为二叉搜索树.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m77组合.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m216组合总和III.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m17电话号码的字母组合.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m39组合总和.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m40组合总和2.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m131分割回文串.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m93复原IP地址.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/A_Array/e27_移除元素.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="156" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m46全排列.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/leetcode-master/src/G_Backtracking/m78组合3.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="cur.val" />
+        <watch expression="nums[l]" language="JAVA" />
+        <watch expression="nums[r]" language="JAVA" />
+        <watch expression="stack" />
+        <watch expression="stack.get(1)" />
+        <watch expression="root.val" />
+        <watch expression="root.right.val" />
+        <watch expression="root.left.val" />
+        <watch expression="paths" />
+        <watch expression="stack.get(1)" />
+        <watch expression="res" language="JAVA" />
+        <watch expression="path" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
