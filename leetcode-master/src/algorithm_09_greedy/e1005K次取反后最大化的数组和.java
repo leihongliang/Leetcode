@@ -1,35 +1,23 @@
 package algorithm_09_greedy;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 class Solution2 {
     public int largestSumAfterKNegations(int[] nums, int k) {
-        int max = 0;//positive
-        Arrays.sort(nums);
-        int res  = 0;
-
+        int res = 0;
+        nums = IntStream.of(nums)
+                .boxed()
+                .sorted((o1, o2) -> Math.abs(o2) - Math.abs(o1))
+                .mapToInt(Integer::intValue).toArray();
         for(int i = 0; i < nums.length; i++) {
-            if (nums[i] < 0) {
-                if (k > 0) {
-                    res -= nums[i];
-                    k--;
-                }else {
-                    res += nums[i];
-                }
-            }
-            if (nums[i] >= 0) {
-                if (k > 0){
-                    if (k % 2 == 1 ) {
-                        res -= nums[i];
-                        k = 0;
-                    }
-                }else {
-                    res += nums[i];
-                }
-
+            if (nums[i] < 0 && k > 0) {
+                nums[i] = -nums[i];
+                k--;
             }
         }
-        return res;
+        if (k % 2 == 1) nums[nums.length - 1] = -nums[nums.length - 1];
+        return Arrays.stream(nums).sum();
     }
 }
 public class e1005K次取反后最大化的数组和 {
