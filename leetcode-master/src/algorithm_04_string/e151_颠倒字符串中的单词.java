@@ -1,7 +1,7 @@
 package algorithm_04_string;
 
 public class e151_颠倒字符串中的单词 {
-    public static String reverseWords(String s) {
+    public static String reverseWords0(String s) {
         char[] arr = s.toCharArray();
         reverse(arr, 0, arr.length - 1);
         int k = 0;// 起点
@@ -64,6 +64,25 @@ public class e151_颠倒字符串中的单词 {
         }else{
             return new String(res,0,k-1);
         }
+    }
+
+    /**
+     * 2023年5月11日16:41:47
+     * @param s
+     * @return
+     */
+    public static String reverseWords(String s) {
+        s = s.trim();
+        int j = s.length() - 1;
+        int i = j;
+        StringBuilder res = new StringBuilder();
+        while(i >= 0) {
+            while(i >= 0 && s.charAt(i) != ' ') i--;
+            res.append(s.substring(i + 1, j + 1) + ' ');
+            i--;
+            j = i;
+        }
+        return res.toString();
     }
 
     public static void main(String[] args) {

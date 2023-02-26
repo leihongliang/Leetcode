@@ -8,13 +8,12 @@ import java.util.List;
 public class m40组合总和2 {
     static List<List<Integer>> res = new ArrayList<>();
     static LinkedList<Integer> path = new LinkedList<>();
-    static int sum = 0;
     public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
         Arrays.sort(candidates);
-        helper(candidates, target, 0);
+        helper(candidates, target, 0, 0);
         return res;
     }
-    public static void helper (int[] candidates, int target, int startIndex) {
+    public static void helper2 (int[] candidates, int target, int sum, int startIndex) {
         if (sum == target) {
             res.add(new ArrayList<>(path));
             return;
@@ -25,11 +24,28 @@ public class m40组合总和2 {
             if (i > startIndex && candidates[i] == candidates[i - 1]) break;
             sum += candidates[i];
             path.add(candidates[i]);
-            helper(candidates, target, i + 1);
+            helper(candidates, target, sum, i + 1);
             sum -= candidates[i];
             path.removeLast();
         }
     }
+    static void helper (int[] candidates, int target, int sum, int startIndex) {
+        if (sum == target) {
+            res.add(new ArrayList<>(path));
+            return;
+        }
+        if (sum > target) {
+            return;
+        }
+        for (int i = startIndex; i < candidates.length; i++) {
+            sum += candidates[i];
+            path.offer(candidates[i]);
+            helper(candidates, target, sum, i + 1);
+            sum -= candidates[i];
+            path.pollLast();
+        }
+    }
+
 
     public static void main(String[] args) {
         //输入: candidates =[10,1,2,7,6,1,5], target =8,

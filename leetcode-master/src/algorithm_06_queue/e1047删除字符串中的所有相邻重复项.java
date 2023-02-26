@@ -1,6 +1,7 @@
 package algorithm_06_queue;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Stack;
 public class e1047删除字符串中的所有相邻重复项 {
 
@@ -83,9 +84,25 @@ public class e1047删除字符串中的所有相邻重复项 {
         return sb.toString();
     }
 
+    public static String removeDuplicates4(String s) {
+        Deque<Character> stack = new ArrayDeque<>();
+        StringBuilder sb = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (!stack.isEmpty() && stack.peek() == c) {
+                stack.pop();
+            }else {
+                stack.push(c);
+            }
+        }
+        while (!stack.isEmpty()) {
+            sb.append(stack.pollLast());
+        }
+        return sb.toString();
+    }
+
     public static void main(String[] args) {
         String s = "abbaca";
-        System.out.println(removeDuplicates3(s));
+        System.out.println(removeDuplicates4(s));
     }
 }
 

@@ -1,7 +1,7 @@
 package algorithm_04_string;
 
 public class jz05_替换空格 {
-    public static String replaceSpace (String s) {
+    public static String replaceSpace0 (String s) {
         StringBuffer res = new StringBuffer(s);
 
         while (res.indexOf(" ") != -1) {
@@ -21,6 +21,18 @@ public class jz05_替换空格 {
             }
         }
         return sb.toString();
+    }
+
+    public static String replaceSpace(String s) {
+        StringBuilder res = new StringBuilder();
+        for (char c : s.toCharArray()) {
+            if (c == ' ') {
+                res.append("%20");
+            }else {
+                res.append(c);
+            }
+        }
+        return res.toString();
     }
 
 

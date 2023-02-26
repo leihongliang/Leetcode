@@ -1,11 +1,12 @@
 package algorithm_06_queue;
 
+import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Stack;
 
 public class e20_有效的括号 {
-    public static boolean isValid(String s) {
+    public static boolean isValid1(String s) {
         Stack<Character> stack = new Stack<>();
         if (s.length()%2 != 0) return false;
         for (int i = 0; i < s.length(); i++) {

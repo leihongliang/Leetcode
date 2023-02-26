@@ -1,9 +1,6 @@
 package algorithm_08_backtracking;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class m78组合3 {
     static List<List<Integer>> res = new ArrayList<>();
@@ -27,10 +24,12 @@ public class m78组合3 {
             path.add(nums[i]);
             used[i] = 1;
             helper(nums, used);
-            path.removeLast();
+            path.pollLast();
             used[i] = 0;
         }
     }
+
+
 
     public static void main(String[] args) {
         int[] nums = {1,1,2};

@@ -1,11 +1,12 @@
 package algorithm_08_backtracking;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 public class m77组合 {
-    static List<List<Integer>> res = new ArrayList<>();
+    static List<List<Integer>> res = new LinkedList<>();
     static LinkedList<Integer> path = new LinkedList<>();
     public static List<List<Integer>> combine(int n, int k) {
         helper(n, k, 1);
@@ -18,7 +19,7 @@ public class m77组合 {
             return;
         }
 //        for (int i = startIndex; i <= n; i++) {
-        for (int i = startIndex; i <= n - (k - path.size() + 1); i++) {
+        for (int i = startIndex; i <= n - (k - path.size()) + 1; i++) {
             path.add(i);
             helper(n, k, startIndex + 1);
             path.removeLast();

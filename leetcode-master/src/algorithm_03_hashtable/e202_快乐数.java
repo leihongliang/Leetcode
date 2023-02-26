@@ -3,7 +3,7 @@ package algorithm_03_hashtable;
 import java.util.HashSet;
 
 public class e202_快乐数 {
-    public static boolean isHappy(int n) {
+    public static boolean isHappy0(int n) {
         HashSet<Integer> set = new HashSet<>();
         int res = 0;
         while ( res != 1 || !set.contains(n)) {
@@ -36,6 +36,29 @@ public class e202_快乐数 {
         }
         return  res;
     }
+
+    public static boolean isHappy(int n) {
+        HashSet<Integer> set = new HashSet<>();
+        while (true) {
+            int tmp = 0;
+            int res = 0;
+            while(n != 0) {
+                tmp = n % 10;
+                res += tmp * tmp;
+                n = n / 10;
+            }
+            if (set.contains(res)) {
+                return false;
+            }else if(res == 1){
+                return true;
+            }else {
+                set.add(res);
+                n =res;
+            }
+        }
+    }
+
+
     public static void main(String[] args) {
         System.out.println(isHappy2(2));
     }

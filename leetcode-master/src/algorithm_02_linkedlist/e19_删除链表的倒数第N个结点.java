@@ -16,7 +16,7 @@ public class e19_删除链表的倒数第N个结点 {
     }
 
 
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
+    public static ListNode removeNthFromEnd0(ListNode head, int n) {
         ListNode dummy = new ListNode(-1, head);
         ListNode slow = dummy;
         ListNode fast = dummy;
@@ -32,12 +32,29 @@ public class e19_删除链表的倒数第N个结点 {
         tmp.next = slow.next;
         return dummy.next;
     }
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode dummy = new ListNode(-1, head);
+        ListNode f = dummy;
+        ListNode s = dummy;
+        while (n > 0) {
+            n--;
+            f = f.next;
+        }
+        while (f.next != null) {
+            s = s.next;
+            f = f.next;
+        }
+        s.next = s.next.next;
+        return dummy.next;
+    }
     public static void main(String[] args) {
         ListNode listNode = new ListNode(1);
         listNode.next = new ListNode(2);
 //        listNode.next.next = new ListNode(3);
 //        listNode.next.next.next = new ListNode(4);
-        ListNode res = removeNthFromEnd(listNode, 2);
+//        listNode.next.next.next.next = new ListNode(5);
+        ListNode res = removeNthFromEnd(listNode, 1);
+
         while (res != null) {
             System.out.println(res.val);
             res = res.next;

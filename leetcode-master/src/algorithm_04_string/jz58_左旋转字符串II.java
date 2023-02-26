@@ -28,6 +28,7 @@ public class jz58_左旋转字符串II {
         }
     }
 
+
     public static void main(String[] args) {
         String res = reverseLeftWords2("abcd", 2);
         System.out.println(res);

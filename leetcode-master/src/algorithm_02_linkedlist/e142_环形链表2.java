@@ -16,7 +16,7 @@ public class e142_环形链表2 {
     }
 
 
-    public static ListNode detectCycle(ListNode head) {
+    public static ListNode detectCycle0(ListNode head) {
         if ( head == null || head.next == null || head.next.next == null ) {
             return null;
         }
@@ -36,13 +36,24 @@ public class e142_环形链表2 {
         }
         return fast;
     }
+
+    public static ListNode detectCycle(ListNode head) {
+        ListNode slow = head.next;
+        ListNode fast = head.next.next;
+        while( slow != fast){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        System.out.println(slow.val);
+        return slow;
+    }
     public static void main(String[] args) {
-        ListNode listNode = new ListNode(1);
-        listNode.next = new ListNode(2);
-        ListNode node = new ListNode(3);
-        listNode.next.next = node;
-//        listNode.next.next.next = new ListNode(4);
-//        listNode.next.next.next.next = node;
+        ListNode listNode = new ListNode(3);
+        ListNode listNode2 = new ListNode(2);
+        listNode.next = listNode2;
+        listNode.next.next = new ListNode(0);
+        listNode.next.next.next = new ListNode(-4);
+        listNode.next.next.next.next = listNode2;
         ListNode res = detectCycle(listNode);
         System.out.println(res.val);
     }

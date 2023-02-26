@@ -1,41 +1,55 @@
 package algorithm_06_queue;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
+import java.util.*;
+class MinStack {
+    Deque<Integer> stack1;
+    Deque<Integer> stack2;
+    /** initialize your data structure here. */
+    public MinStack() {
+        stack1 = new ArrayDeque<>();
+        stack2 = new ArrayDeque<>();
+    }
 
+    public void push(int x) {
+        stack1.push(x);
+        if (stack2.isEmpty() || stack2.peek() >= x) {
+            stack2.push(x);
+        }
+    }
+
+    public void pop() {
+        int tmp = stack1.pop();
+        if (tmp == stack2.peek()){
+            // System.out.println(stack1.peek());
+
+
+            stack2.pop();
+            System.out.println(stack2.peek());
+        }
+        // if(stack1.pop().equals(stack2.peek()))
+        //     stack2.pop();
+    }
+
+    public int top() {
+        return stack1.peek();
+    }
+
+    public int min() {
+        return stack2.peek();
+    }
+}
 public class test {
     public static void main(String[] args) {
-        Map<String, String> map = new HashMap<String, String>();
-        map.put("key1", "value1");
-        map.put("key2", "value2");
-        map.put("key3", "value3");
+        MinStack obj = new MinStack();
+        obj.push(512);
+        obj.push(-1024);
+        obj.push(-1024);
+        obj.push(512);
+        obj.pop();
+        obj.pop();
+        obj.pop();
+        System.out.println(obj.min());
 
-        //第一种：普遍使用，二次取值
-        System.out.println("通过Map.keySet遍历key和value：");
-        for (String key : map.keySet()) {
-            System.out.println("key= "+ key + " and value= " + map.get(key));
-        }
-
-        //第二种
-        System.out.println("通过Map.entrySet使用iterator遍历key和value：");
-        Iterator<Map.Entry<String, String>> it = map.entrySet().iterator();
-        while (it.hasNext()) {
-            Map.Entry<String, String> entry = it.next();
-            System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
-        }
-
-        //第三种：推荐，尤其是容量大时</span>
-        System.out.println("通过Map.entrySet遍历key和value");
-        for (Map.Entry<String, String> entry : map.entrySet()) {
-            System.out.println("key= " + entry.getKey() + " and value= " + entry.getValue());
-        }
-
-        //第四种
-        System.out.println("通过Map.values()遍历所有的value，但不能遍历key");
-        for (String v : map.values()) {
-            System.out.println("value= " + v);
-        }
     }
 
 }

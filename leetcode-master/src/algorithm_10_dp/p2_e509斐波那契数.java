@@ -1,7 +1,11 @@
 package algorithm_10_dp;
 
+import java.util.HashMap;
+
 public class p2_e509斐波那契数 {
     public static int fib(int n) {
+        HashMap map = new HashMap();
+        map.put(1,1);
         int res = 0;
         int[] dp = new int[n + 2];
         dp[0] = 0;
