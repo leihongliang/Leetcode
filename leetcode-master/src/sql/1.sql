@@ -283,3 +283,12 @@ GROUP BY s.c_id;
 # 53. 查询下周过生日的学生【时间函数】*
 
 
+
+select  stu_name,count(num) num from
+    (
+        select stu_name,date(createtime)-row_number() over(partition by stu_name ORDER BY createtime) num from
+            (
+                -- 1、去重，每天多次登录，只保留一条
+                select distinct stu_name,DATE_FORMAT(createtime,'%Y-%m-%d')createtime  from login_log
+            ) t1
+    )t2 GROUP BY  stu_name  HAVING(count(1))>7
