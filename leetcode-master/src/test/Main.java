@@ -5,69 +5,52 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        int m = in.nextInt();
-        int k = in.nextInt();
-        int[] values = new int[n];
-        int[] costs = new int[n];
-        for (int i = 0; i < n; i++) {values[i] = in.nextInt(); }
-        for (int i = 0; i < n; i++) {
-            costs[i] = in.nextInt();
-        }
-        List<List<int[]>> adj = new ArrayList<>();
-        for (int i = 0; i < n; i++) {
-            adj.add(new ArrayList<>());
-        }
-        for (int i = 0; i < m; i++) {
-            int a = in.nextInt() - 1;
-            int b = in.nextInt() - 1;
-            int h = in.nextInt();
-            adj.get(a).add(new int[] {b, h});
-            adj.get(b).add(new int[] {a, h});
-        }
-        long res = 0;
+        int[] array = new int[] {1, 2, 3, 5, 4, 8};
+        int[] result = mergeSort(array);
+        System.out.println(Arrays.toString(result));
+    }
 
-//        for (int i = 0; i < n; i++) {
-//            List<int[]> nexts = adj.get(i);
-//            for (int[] next: nexts) {
-//                int j = next[0];
-//                if (i == j) continue;
-//                List<int[]> nextnexts = adj.get(i);
-//                for (int[] nextnext: nextnexts) {
-//                    int q = nextnext[0];
-//                    if (q == j || q == i) continue;
-//                    long sum = (long) costs[i] + costs[j] + costs[q] + next[1] + nextnext[1];
-//                    if (sum > k) continue;
-//                    long totalValue = (long) values[i] + values[j] + values[q];
-//                    res = Math.max(res, totalValue);
-//                }
-//            }
-//        }
-        for (int i = 0; i < n; i++) {
-            List<int[]> nei = adj.get(i);
-            Iterator<int[]> it1 = nei.iterator();
-            while (it1.hasNext()) {
-                int[] e1 = it1.next();
-                int j = e1[0];
-                if (i != j) {
-                    Iterator<int[]> it2 = nei.iterator();
-                    while (it2.hasNext()) {
-                        int[] e2 = it2.next();
-                        int q = e2[0];
-                        if (q != j && q != i) {
-                            long sum = (long) costs[i] + costs[j] + costs[q] + e1[1] + e2[1];
-                            if (sum <= k) {
-                                long totalValue = (long) values[i] + values[j] + values[q];
-                                res = Math.max(res, totalValue);
-                            }
-                        }
-                    }
-                }
+    public static int[] mergeSort(int[] arr) {
+        if (arr.length <= 1) {
+            return arr;
+        }
+
+        int middle = arr.length / 2;
+        int[] arr1 = Arrays.copyOfRange(arr, 0, middle);
+        int[] arr2 = Arrays.copyOfRange(arr, middle, arr.length);
+
+        return merge(mergeSort(arr1), mergeSort(arr2));
+    }
+
+    public static int[] merge(int[] arr1, int[] arr2) {
+        int[] sortArr = new int[arr1.length +arr2.length];
+        int idx = 0, idx1=0, idx2=0;
+        while (idx1 < arr1.length && idx2 < arr2.length) {
+            if (arr1[idx1] < arr2[idx2]) {
+                sortArr[idx] = arr1[idx1];
+                idx1 += 1;
+            }else {
+                sortArr[idx] = arr2[idx2];
+                idx2 +=1;
+            }
+            idx +=1;
+        }
+        if (idx1 < arr1.length) {
+            while (idx1 < arr1.length) {
+                sortArr[idx] = arr1[idx1];
+                idx1 += 1;
+                idx +=1;
+            }
+        } else {
+            while (idx2 < arr2.length) {
+                sortArr[idx] = arr2[idx2];
+                idx2 += 1;
+                idx += 1;
             }
         }
 
-        System.out.println(res);
+        return sortArr;
+
     }
 
 }
