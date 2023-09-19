@@ -6,35 +6,23 @@ public class Main {
 
 
         public static void main(String[] args) {
-            // 创建一个HashMap
-            HashMap<String, Integer> hashMap = new HashMap<>();
 
-            // 添加键值对
-            hashMap.put("apple", 10);
-            hashMap.put("banana", 20);
-            hashMap.put("orange", 15);
-
-            // 获取值
-            int appleCount = hashMap.get("apple");
-            System.out.println("Apple count: " + appleCount);
-
-            // 检查是否包含某个键
-            boolean containsKey = hashMap.containsKey("banana");
-            System.out.println("Contains key 'banana': " + containsKey);
-
-            // 遍历HashMap
-            for (String key : hashMap.keySet()) {
-                int value = hashMap.get(key);
-                System.out.println("Key: " + key + ", Value: " + value);
+                Scanner scanner = new Scanner(System.in);
+                int n = scanner.nextInt();
+                int[] a = new int[n];
+                for (int i = 0; i < n; i++) {
+                    a[i] = scanner.nextInt();
+                }
+                int minOperations = Integer.MAX_VALUE;
+                for (int i = 0; i < n - 1; i++) {
+                    if (Math.abs(a[i] - a[i + 1]) < minOperations) {
+                        minOperations = Math.abs(a[i] - a[i + 1]);
+                    }
+                }
+                System.out.println(minOperations);
             }
-
-            // 删除键值对
-            hashMap.remove("orange");
-
-            // 清空HashMap
-            hashMap.clear();
         }
 
 
 
-}
+
