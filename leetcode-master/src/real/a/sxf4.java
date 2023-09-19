@@ -15,7 +15,7 @@ import java.util.Scanner;
 示例1
 输入输出示例仅供调试，后台判题数据一般不包含示例
 输入
-复制
+
 abc
 输出
 abc
