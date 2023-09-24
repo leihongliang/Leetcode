@@ -39,6 +39,7 @@ from (select name, base_dt, count(1)
                          from( select name, date(dt) as dt from login_log group by name, date(dt)) a
                          ) b
                  ) c
+
 group by name,base_dt
 HAVING COUNT(1)>=7 ) d;
 
@@ -53,12 +54,12 @@ from ( select *, DATE_SUB(dt,INTERVAL rn DAY) as base_dt
 group by name, base_dt
 HAVING COUNT(1)>=7;
 
-# 步骤一去重
+# 步骤一去重 只保留当天的一次登录
 select name,
        date(dt) as dt
 from login_log group by name, date(dt);
 
-#步骤二 登录日期进行排序
+#步骤二 根据登录日期分配行号
 select *,
        row_number() over(partition by a.name order by a.dt) as rn
 from ( select name,
@@ -66,7 +67,7 @@ from ( select name,
        from login_log group by name, date(dt)) a;
 
 
-#步骤二 登录日期进行排序，并按照连续分组
+#步骤二 计算登录的第一天
 select *, DATE_SUB(dt,INTERVAL rn DAY) as base_dt
 from ( select *,
               row_number() over(partition by a.name order by a.dt) as rn
@@ -74,3 +75,27 @@ from ( select *,
                      date(dt) as dt
               from login_log group by name, date(dt)) a
      ) b;
+
+select name, count(1)
+    from (
+select *, DATE_SUB(dt,INTERVAL rn DAY) as base_dt
+from ( select *,
+              row_number() over(partition by a.name order by a.dt) as rn
+       from ( select name,
+                     date(dt) as dt
+              from login_log group by name, date(dt)) a
+     ) b)c
+group by name, base_dt
+having count(1) >= 4;
+
+
+# 7天内登录三天的用户
+SELECT name
+FROM login_log
+where dt >= date('2021-03-05 09:58:29.438123') - INTERVAL 7 DAY
+# where dt >= CURDATE() - INTERVAL 7 DAY
+GROUP BY name
+HAVING COUNT(DISTINCT DATE(dt)) >= 3;
+
+
+
