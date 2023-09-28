@@ -43,6 +43,7 @@ from (select name, base_dt, count(1)
 group by name,base_dt
 HAVING COUNT(1)>=7 ) d;
 
+SELECT right(name,2) AS c1  FROM login_log ;
 # 找出连续登录7天的用户
 select name,
        count(1)

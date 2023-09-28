@@ -1,29 +1,24 @@
 package test;
 
+import java.io.FilterOutputStream;
 import java.util.*;
-public class Main {
-
+class Main {
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("A", "B", "C");
-        List<String> resultList = new ArrayList<>();
+        Scanner in = new Scanner(System.in);
+        String s = in .nextLine();
+        s = s.trim();
+        int j = s.length() - 1;
+        int i = j;
+        StringBuilder res = new StringBuilder();
+        while(i >= 0) {
+            while(i >= 0 && s.charAt(i) != ' ') i--;
+            res.append(s.substring(i + 1, j + 1) + ' ');
+            while(i >= 0 && s.charAt(i) == ' ') i--;
+            j = i;
+        }
 
-        list.stream()
-                .filter(item -> {
-                    System.out.print(item);
-                    return true;
-                })
-                .forEach(item -> {
-                    if (item.equals("B")) {
-                        resultList.add(item);
-                        return;
-                    }
-                    resultList.add(item.toUpperCase());
-                });
-
-        System.out.println("\n" + resultList);
+        System.out.println(res.toString().trim());
     }
-
-
 }
 
 

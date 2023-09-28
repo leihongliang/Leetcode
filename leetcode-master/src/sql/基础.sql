@@ -119,10 +119,12 @@ FROM student AS st INNER JOIN score sc
 ON st.s_id = sc.s_id
 WHERE sc.c_id = '01' AND sc.s_score < 60
 ORDER BY sc.s_score DESC;
+
 # 23. 查询不及格的课程及学生名，学号，按课程号从大到小排列【inner join】
 SELECT  sc.s_id, st.s_name, st.s_id
 FROM student st INNER JOIN score sc on st.s_id = sc.s_id
 WHERE sc.s_score < 60 ORDER BY sc.s_id DESC;
+
 # 24. 查询课程名称为「数学」，且分数低于 60 的学生姓名和分数【inner join】
 SELECT  s_score, s.s_name
 FROM score sc INNER JOIN student s on sc.s_id = s.s_id
@@ -132,11 +134,13 @@ WHERE sc.s_score < 60 AND sc.c_id IN (SELECT c_id FROM course WHERE c_name = '�
 SELECT st.s_id, st.s_name, AVG(s.s_score)
 FROM student st INNER JOIN score s on st.s_id = s.s_id
 GROUP BY s.s_id HAVING AVG(s.s_score) >= 85;
+
 # 26. 查询不同老师所教不同课程平均分从高到低显示【inner join】
 SELECT s.c_id, c.t_id, AVG(s.s_score)
 FROM score s INNER JOIN course c on s.c_id = c.c_id
 GROUP BY c.c_id
 ORDER BY AVG(s.s_score) DESC ;
+
 # 27. 查询平均成绩大于等于 60 分的同学的学生编号和学生姓名和平均成绩【inner join】
 SELECT st.s_id, st.s_name, AVG(s.s_score)
 FROM student st INNER JOIN score s on st.s_id = s.s_id
