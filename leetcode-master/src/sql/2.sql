@@ -54,3 +54,9 @@ FROM customers c
              JOIN products p ON o.product_id = p.product_id
 ) p ON c.customer_id = p.customer_id AND p.rn = 1
 ORDER BY c.customer_id;
+
+
+
+
+select * from teacher where teacher.t_id not in (select t_id from teacher2);
+select * from teacher t left join sqlexe.teacher2 t2 on t.t_id = t2.t_id where t2.t_id is null;

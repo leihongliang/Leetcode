@@ -1,5 +1,7 @@
 package algorithm_02_linkedlist;
 
+import javax.swing.event.ListDataEvent;
+
 public class e19_删除链表的倒数第N个结点 {
     public static class ListNode {
         int val;
@@ -32,7 +34,7 @@ public class e19_删除链表的倒数第N个结点 {
         tmp.next = slow.next;
         return dummy.next;
     }
-    public static ListNode removeNthFromEnd(ListNode head, int n) {
+    public static ListNode removeNthFromEnd1(ListNode head, int n) {
         ListNode dummy = new ListNode(-1, head);
         ListNode f = dummy;
         ListNode s = dummy;
@@ -47,13 +49,32 @@ public class e19_删除链表的倒数第N个结点 {
         s.next = s.next.next;
         return dummy.next;
     }
+    //20231003
+    public static ListNode removeNthFromEnd(ListNode head, int n) {
+        if (head == null) return head;
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode slow = head;
+        ListNode fast = head;
+        while(n > 0) {
+            fast = fast.next;
+            n--;
+        }
+        while (fast.next != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+        slow.next = slow.next.next;
+        return dummy.next;
+    }
+
     public static void main(String[] args) {
         ListNode listNode = new ListNode(1);
         listNode.next = new ListNode(2);
-//        listNode.next.next = new ListNode(3);
-//        listNode.next.next.next = new ListNode(4);
-//        listNode.next.next.next.next = new ListNode(5);
-        ListNode res = removeNthFromEnd(listNode, 1);
+        listNode.next.next = new ListNode(3);
+        listNode.next.next.next = new ListNode(4);
+        listNode.next.next.next.next = new ListNode(5);
+        ListNode res = removeNthFromEnd(listNode, 2);
 
         while (res != null) {
             System.out.println(res.val);

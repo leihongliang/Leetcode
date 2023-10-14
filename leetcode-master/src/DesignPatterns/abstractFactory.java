@@ -26,6 +26,7 @@ class DogFactory02 extends AnimalFactory02 {
         return new Dog02();
     }
 }
+
 // 客户端代码
 public class abstractFactory {
     public static void main(String[] args) {

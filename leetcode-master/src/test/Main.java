@@ -1,27 +1,19 @@
 package test;
 
-import java.io.FilterOutputStream;
-import java.util.*;
-class Main {
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        String s = in .nextLine();
-        s = s.trim();
-        int j = s.length() - 1;
-        int i = j;
-        StringBuilder res = new StringBuilder();
-        while(i >= 0) {
-            while(i >= 0 && s.charAt(i) != ' ') i--;
-            res.append(s.substring(i + 1, j + 1) + ' ');
-            while(i >= 0 && s.charAt(i) == ' ') i--;
-            j = i;
+public class Main {
+    public static int f(int n) {
+        if (n <= 3) {
+            return 1;
+        } else {
+            return f(n - 2) + f(n - 4) + 1;
         }
+    }
 
-        System.out.println(res.toString().trim());
+    public static void main(String[] args) {
+        int a =3;
+        int b=6;
+        int c= 5;
+
+        System.out.println();
     }
 }
-
-
-
-
-
